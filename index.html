@@ -1,0 +1,21 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Alan's App</title>
+</head>
+<body>
+    <button id="pushme">Do it</button>
+    <button id="reset">Reset</button>
+    <div id="results"></div>
+    <script src="js/zepto.js"></script>
+    <script src="js/push.js"></script>
+    <script>
+        $('#pushme').click(function() {
+            push.do($('#results'));
+        });
+        $('#reset').click(function() {
+            $('#results').html('');
+        });
+    </script>
+</body>
+</html>
